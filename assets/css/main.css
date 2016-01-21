@@ -2257,7 +2257,7 @@
     display: block;
     color: #ddd;
     text-decoration: none;
-    height: 44px;
+    /*height: 44px;*/
     line-height: 44px;
     border: 0;
     border-top: solid 1px #3c3c3c;
