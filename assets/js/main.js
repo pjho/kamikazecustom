@@ -185,10 +185,14 @@ Util.js
 
                   if (target == '_blank')
                     window.open(href);
-                  else
+                  else{
+                    $('html, body').animate({
+                        scrollTop: $(href).offset().top
+                    }, 700);
                     window.location.href = href;
+                  }
 
-                }, config.delay + 10);
+                },  10);
 
             });
 
