@@ -705,6 +705,18 @@ Util.js
 					$('#titleBar, #navPanel, #page-wrapper')
 						.css('transition', 'none');
 
+
+        $('#gmap-holder').on('click', function(e) {
+            $(this).find('iframe').css('pointer-events', 'all');
+        }).mouseleave(function(e) {
+            $(this).find('iframe').css('pointer-events', 'none');
+        });
+
+
+
+
+
+
 	});
 
 })(jQuery);
