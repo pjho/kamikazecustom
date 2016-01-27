@@ -1230,6 +1230,13 @@
 			top: 0.5em;
 		}
 
+    .image.right {
+      float: right;
+      margin: 0 0 1.5em 1.5em;
+      position: relative;
+      top: 0.5em;
+    }
+
 		.image.centered {
 			display: block;
 			margin: 0 0 2em 0;

@@ -182,14 +182,22 @@ Util.js
 
               // Redirect to href.
                 window.setTimeout(function() {
+                  if (target === undefined) {
 
-                  if (target == '_blank')
-                    window.open(href);
-                  else{
                     $('html, body').animate({
                         scrollTop: $(href).offset().top
                     }, 700);
+
                     window.location.href = href;
+
+                  } else if (target == '_blank') {
+
+                    window.open(href);
+
+                  } else{
+
+                    window.location.href = href;
+
                   }
 
                 },  10);
